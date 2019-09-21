@@ -10,28 +10,21 @@ namespace InterfaceDemo
 {
 	public class Program
 	{
-	
-		
-		
 		static void Main(string[] args)
-		{			
-			Custom custom = new Custom(SendAction.SendFromMon);
-			Console.Write($"媽媽{custom(10).ToString()}");
+		{
 			//interfaceDemo();
 			//abstractDemo();
+			delegateDemo();
 			Console.Read();
 		}
 		/// <summary>
 		/// 介面
 		/// </summary>
 		static void interfaceDemo() {
-
 			Car car = new Car();
 			Console.WriteLine(car.Name);
 			car.Run();
 			car.ISpeedUp(9);
-			
-
 		}
 		/// <summary>
 		/// 抽象類別、抽象方法
@@ -41,7 +34,13 @@ namespace InterfaceDemo
 			Taiwanese taiwan = new Taiwanese();
 			taiwan.Name = "臺灣人";
 			taiwan.SayHello();
-
+		}
+		/// <summary>
+		/// 委派
+		/// </summary>
+		static void delegateDemo() {
+			Custom custom = new Custom(SendAction.SendFromMon);
+			Console.Write($"媽媽{custom(10).ToString()}");
 		}
 		
 	}
