@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace InterfaceDemo.DataClass
 {
-	public interface SpeedUp //定義SpeedUp介面 
+	public interface ISpeedUp //定義IFly介面 
 	{
-		void SpeedUp(int n); //宣告SpeedUp方法
+		void ISpeedUp(int n); //宣告Fly方法
 	}
 
 
@@ -24,9 +24,11 @@ namespace InterfaceDemo.DataClass
 		{
 			Console.WriteLine("跑了5公里");
 		}
-		public void SpeedUp(int n)
-		{
+		public void ISpeedUp(int n) {
+
 			Console.WriteLine($"加速快跑{n}公里");
+		
+
 		}
 	}
 }

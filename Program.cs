@@ -14,7 +14,7 @@ namespace InterfaceDemo
 			Car car = new Car();
 			Console.WriteLine(car.Name);
 			car.Run();
-			car.SpeedUp(9);
+			car.ISpeedUp(9);
 			Console.Read();
 		}
 	}
