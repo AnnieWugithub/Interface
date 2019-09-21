@@ -4,18 +4,40 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using InterfaceDemo.DataClass;
-
+using abstractDemo.DataClass;
 namespace InterfaceDemo
 {
 	public class Program
 	{
 		static void Main(string[] args)
 		{
+			interfaceDemo();
+			abstractDemo();
+			Console.Read();
+		}
+		/// <summary>
+		/// 介面
+		/// </summary>
+		static void interfaceDemo() {
+
 			Car car = new Car();
 			Console.WriteLine(car.Name);
 			car.Run();
 			car.ISpeedUp(9);
-			Console.Read();
+			
+
 		}
+		/// <summary>
+		/// 抽象類別、抽象方法
+		/// </summary>
+		static void abstractDemo()
+		{
+			Taiwanese taiwan = new Taiwanese();
+			taiwan.Name = "臺灣人";
+			taiwan.SayHello();
+
+		}
+
+
 	}
 }
