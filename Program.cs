@@ -12,6 +12,8 @@ namespace InterfaceDemo
 		static void Main(string[] args)
 		{
 			Car car = new Car();
+			Console.WriteLine(car.Name);
+			car.Run();
 			car.SpeedUp(9);
 			Console.Read();
 		}

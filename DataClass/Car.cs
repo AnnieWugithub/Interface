@@ -10,8 +10,9 @@ namespace InterfaceDemo.DataClass
 	{
 		public Car()
 		{
-
+			Name = "四人小客車";
 		}
+		public string Name { get; set; }
 		public int Door { get; set; }
 		public string CarGlass { get; set; }
 
