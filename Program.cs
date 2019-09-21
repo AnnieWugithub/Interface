@@ -5,14 +5,23 @@ using System.Text;
 using System.Threading.Tasks;
 using InterfaceDemo.DataClass;
 using abstractDemo.DataClass;
+using delegateDemo.DataClass;
 namespace InterfaceDemo
 {
 	public class Program
 	{
+	
+		
+		
 		static void Main(string[] args)
 		{
-			interfaceDemo();
-			abstractDemo();
+			
+			Custom custom = new Custom(SendAction.SendFromMon);
+			Console.Write($"媽媽{custom(10).ToString()}");
+			//interfaceDemo();
+			//abstractDemo();
+
+
 			Console.Read();
 		}
 		/// <summary>
@@ -39,5 +48,16 @@ namespace InterfaceDemo
 		}
 
 
+
+		
+
+		public static void show(string test1) {
+			Console.Write(test1);
+		}
+
+		public static void show2(string test2)
+		{
+			Console.Write($"科科{test2}");
+		}
 	}
 }

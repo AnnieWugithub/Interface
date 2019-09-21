@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataClass\abstractDemo\Human.cs" />
+    <Compile Include="DataClass\delegateDemo\SendAction.cs" />
     <Compile Include="DataClass\interfaceDemo\Car.cs" />
     <Compile Include="DataClass\interfaceDemo\MotoMachine.cs" />
     <Compile Include="Program.cs" />
