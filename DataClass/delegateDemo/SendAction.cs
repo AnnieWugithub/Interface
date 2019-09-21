@@ -12,18 +12,18 @@ namespace delegateDemo.DataClass
 	{
 		public static int SendFromFather(int amount)
 		{
-			amount += 10;
+			amount *= 10;
 			return amount;
 		}
 		public static int SendFromSister(int amount)
 		{
-			amount += 100;
+			amount *= 100;
 			return amount;
 		}
 
 		public static int SendFromMon(int amount)
 		{
-			amount += 10000;
+			amount *= 10000;
 			return amount;
 		}
 	}
