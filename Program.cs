@@ -14,14 +14,11 @@ namespace InterfaceDemo
 		
 		
 		static void Main(string[] args)
-		{
-			
+		{			
 			Custom custom = new Custom(SendAction.SendFromMon);
 			Console.Write($"媽媽{custom(10).ToString()}");
 			//interfaceDemo();
 			//abstractDemo();
-
-
 			Console.Read();
 		}
 		/// <summary>
@@ -46,14 +43,6 @@ namespace InterfaceDemo
 			taiwan.SayHello();
 
 		}
-
-		public static void show(string test1) {
-			Console.Write(test1);
-		}
-
-		public static void show2(string test2)
-		{
-			Console.Write($"科科{test2}");
-		}
+		
 	}
 }
