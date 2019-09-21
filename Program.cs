@@ -10,6 +10,7 @@ namespace InterfaceDemo
 {
 	public class Program
 	{
+		
 		static void Main(string[] args)
 		{
 			//interfaceDemo();
@@ -35,9 +36,6 @@ namespace InterfaceDemo
 			taiwan.Name = "臺灣人";
 			taiwan.SayHello();
 		}
-		/// <summary>
-		/// 委派
-		/// </summary>
 		static void delegateDemo() {
 			Custom custom = new Custom(SendAction.SendFromMon);
 			Console.Write($"媽媽{custom(10).ToString()}");
