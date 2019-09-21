@@ -6,29 +6,24 @@ using System.Threading.Tasks;
 
 namespace delegateDemo.DataClass
 {
-
 	public delegate int Custom(int amount);
 	public class SendAction
 	{
 		public static int SendFromFather(int amount)
 		{
-			amount *= 10;
+			amount *= 2;
 			return amount;
 		}
 		public static int SendFromSister(int amount)
 		{
-			amount *= 100;
+			amount *= 3;
 			return amount;
 		}
 
 		public static int SendFromMon(int amount)
 		{
-			amount *= 10000;
+			amount *= 4;
 			return amount;
 		}
 	}
-
-
-
-
 }

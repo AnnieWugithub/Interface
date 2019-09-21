@@ -47,10 +47,6 @@ namespace InterfaceDemo
 
 		}
 
-
-
-		
-
 		public static void show(string test1) {
 			Console.Write(test1);
 		}
